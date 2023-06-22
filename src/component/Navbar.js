@@ -9,7 +9,6 @@ const Navbar = ({
   setActiveCountry,
   activeCategory
 }) => {
-  // const [language, setLanguage] = useState('en')
 
   const countries = [
     {
@@ -59,59 +58,6 @@ const Navbar = ({
     "sports",
     "technology",
   ];
-
-  /*
-    const languages = [
-      {
-        key: 'English',
-        value: 'en'
-      },
-      {
-        key: 'Arabic',
-        value: 'ar'
-      },
-      {
-        key: 'German',
-        value: 'de'
-      },
-      {
-        key: 'French',
-        value: 'fr'
-      },
-      {
-        key: 'Hebrew',
-        value: 'he'
-      },
-      {
-        key: 'Italian',
-        value: 'it'
-      },
-      {
-        key: 'Norwegian',
-        value: 'no'
-      },
-      {
-        key: 'Portuguese',
-        value: 'pt'
-      },
-      {
-        key: 'Russian',
-        value: 'ru'
-      },
-      {
-        key: 'Swedish',
-        value: 'sv'
-      },
-      {
-        key: 'english',
-        value: 'ud'
-      },
-      {
-        key: 'Chinese',
-        value: 'zh'
-      }
-    ]
-    */
 
   const hamburgerChecked = useRef()
 
