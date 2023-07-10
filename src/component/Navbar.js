@@ -63,7 +63,7 @@ const Navbar = ({
 
   return (
     <div className="main-navbar">
-      <h3 className="logo-mobile">NewsX</h3>      
+      <h3 className="logo-mobile">Purohit-News</h3>      
       <label className="hamburger-menu" ref={hamburgerChecked}>
         <input type="checkbox" />
       </label>
