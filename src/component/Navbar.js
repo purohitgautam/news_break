@@ -5,9 +5,7 @@ const Navbar = ({
   setCountry,
   setCategory,
   activeCountry,
-  setActiveCategory,
   setActiveCountry,
-  activeCategory
 }) => {
 
   const countries = [
@@ -99,23 +97,16 @@ const Navbar = ({
                     style={({ isActive }) => {
                       return {
                         textDecoration: "none",
-                        borderBottom: isActive ? "1px solid rgb(201, 0, 201)" : "none"
+                        borderBottom: isActive ? "1px solid rgb(201, 0, 201)" : "none",
+                        color: isActive ? "rgb(201, 0, 201)" : "black"
                       };
                     }}
-                  >
-                    <li
-                      className={
-                        index === activeCategory ? "active-category" : ""
-                      }
-                      onClick={() => {
-                        setCategory(value);
-                        setActiveCategory(index);
-                        hamburgerChecked.current.click()
-                      }}
-                      key={index}
+                    onClick={() => {
+                      setCategory(value);
+                      hamburgerChecked.current.click()
+                    }}
                     >
                       {value}
-                    </li>
                   </NavLink>
                 );
               })}
