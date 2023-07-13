@@ -16,7 +16,6 @@ const News = () => {
   const [articles, setArticles] = useState([]);
   const [totalResults, setTotalResults] = useState(0);
   const [activeCountry, setActiveCountry] = useState(0)
-  const [activeCategory, setActiveCategory] = useState(0)
   const [loading, setLoading] = useState(false);
   
   
@@ -47,9 +46,7 @@ const News = () => {
         setCountry={setCountry}
         setCategory={setCategory} 
         activeCountry={activeCountry} 
-        setActiveCountry={setActiveCountry} 
-        activeCategory={activeCategory} 
-        setActiveCategory={setActiveCategory} 
+        setActiveCountry={setActiveCountry}  
       />
 
       <div className="total-results"><p>total results : {totalResults}</p></div>
